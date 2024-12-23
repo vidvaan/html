@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Semantic Elements</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Placeholder for Header -->
+    <!-- Placeholder for Footer -->
+    <div id="header-container"></div>
+  <main>
+    <section>
+        <h2>Overview</h2>
+        <p>HTML5 introduced semantic elements to improve the structure and accessibility of web content. These elements provide meaning to the document structure, aiding both developers and search engines.</p>
+        
+        <h3>1. <code>&lt;header&gt;</code></h3>
+        <p>The <code>&lt;header&gt;</code> element is used to group introductory content or navigation links.</p>
+        <h4>Syntax:</h4>
+        <pre><code>&lt;header&gt;
+    &lt;h1&gt;Page Title&lt;/h1&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+        </code></pre>
+        <h4>Example:</h4>
+        <p>Rendered Output:</p>
+        <header>
+          <h1>Welcome to My Website</h1>
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+  
+        <h3>2. <code>&lt;footer&gt;</code></h3>
+        <p>The <code>&lt;footer&gt;</code> element contains footer information, such as copyright and links.</p>
+        <h4>Syntax:</h4>
+        <pre><code>&lt;footer&gt;
+    &lt;p&gt;Copyright 2024&lt;/p&gt;
+  &lt;/footer&gt;
+        </code></pre>
+        <h4>Example:</h4>
+        <p>Rendered Output:</p>
+        <footer>
+          <p>Copyright 2024</p>
+        </footer>
+  
+        <h3>3. <code>&lt;article&gt;</code></h3>
+        <p>The <code>&lt;article&gt;</code> element represents self-contained content that can be distributed independently.</p>
+        <h4>Syntax:</h4>
+        <pre><code>&lt;article&gt;
+    &lt;h2&gt;Article Title&lt;/h2&gt;
+    &lt;p&gt;Article content...&lt;/p&gt;
+  &lt;/article&gt;
+        </code></pre>
+        <h4>Example:</h4>
+        <p>Rendered Output:</p>
+        <article>
+          <h2>Understanding Semantic HTML</h2>
+          <p>Semantic HTML enhances accessibility and SEO.</p>
+        </article>
+  
+        <h3>4. <code>&lt;section&gt;</code></h3>
+        <p>The <code>&lt;section&gt;</code> element defines a thematic grouping of content, usually with a heading.</p>
+        <h4>Syntax:</h4>
+        <pre><code>&lt;section&gt;
+    &lt;h2&gt;Section Title&lt;/h2&gt;
+    &lt;p&gt;Section content...&lt;/p&gt;
+  &lt;/section&gt;
+        </code></pre>
+        <h4>Example:</h4>
+        <p>Rendered Output:</p>
+        <section>
+          <h2>About Us</h2>
+          <p>We are dedicated to providing excellent services.</p>
+        </section>
+  
+        <h3>5. <code>&lt;aside&gt;</code></h3>
+        <p>The <code>&lt;aside&gt;</code> element represents content tangentially related to the main content, such as sidebars.</p>
+        <h4>Syntax:</h4>
+        <pre><code>&lt;aside&gt;
+    &lt;p&gt;Related links or information...&lt;/p&gt;
+  &lt;/aside&gt;
+        </code></pre>
+        <h4>Example:</h4>
+        <p>Rendered Output:</p>
+        <aside>
+          <p>Did you know? HTML5 simplifies web development.</p>
+        </aside>
+  
+        <h3>6. <code>&lt;figure&gt; &amp; &lt;figcaption&gt;</code></h3>
+        <p>The <code>&lt;figure&gt;</code> element is used for images or diagrams, and <code>&lt;figcaption&gt;</code> provides a caption.</p>
+        <h4>Syntax:</h4>
+        <pre><code>&lt;figure&gt;
+    &lt;img src="image.jpg" alt="Description"&gt;
+    &lt;figcaption&gt;Caption text&lt;/figcaption&gt;
+  &lt;/figure&gt;
+        </code></pre>
+        <h4>Example:</h4>
+        <p>Rendered Output:</p>
+        <figure>
+          <img src="https://via.placeholder.com/150" alt="Placeholder image">
+          <figcaption>Figure 1: A sample image</figcaption>
+        </figure>
+  
+        <h3>7. Summary Table</h3>
+        <table border="1" cellpadding="5">
+          <thead>
+            <tr>
+              <th>Element</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>&lt;header&gt;</code></td>
+              <td>Defines introductory content.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;footer&gt;</code></td>
+              <td>Defines footer information.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;article&gt;</code></td>
+              <td>Defines self-contained content.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;section&gt;</code></td>
+              <td>Defines a thematic grouping of content.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;aside&gt;</code></td>
+              <td>Defines tangential content, like sidebars.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;figure&gt;</code> &amp; <code>&lt;figcaption&gt;</code></td>
+              <td>Groups media with a caption.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+  <section>
+        <table border="1" cellpadding="5">
+            <thead>
+              <tr>
+                <th>Element</th>
+                <th>Description</th>
+                <th>Rendered Output</th>
+                <th>HTML Code</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>&lt;header&gt;</code></td>
+                <td>Defines introductory content or navigation links.</td>
+                <td>
+                  <header>
+                    <h1>Welcome to My Website</h1>
+                    <nav>
+                      <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
+                    </nav>
+                  </header>
+                </td>
+                <td>
+                  &lt;header&gt;<br>
+                  &nbsp;&nbsp;&lt;h1&gt;Welcome to My Website&lt;/h1&gt;<br>
+                  &nbsp;&nbsp;&lt;nav&gt;<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                  &nbsp;&nbsp;&lt;/nav&gt;<br>
+                  &lt;/header&gt;
+                </td>
+              </tr>
+              <tr>
+                <td><code>&lt;footer&gt;</code></td>
+                <td>Defines footer information, such as copyright and links.</td>
+                <td>
+                  <footer>
+                    <p>Copyright 2024</p>
+                  </footer>
+                </td>
+                <td>
+                  &lt;footer&gt;<br>
+                  &nbsp;&nbsp;&lt;p&gt;Copyright 2024&lt;/p&gt;<br>
+                  &lt;/footer&gt;
+                </td>
+              </tr>
+              <tr>
+                <td><code>&lt;article&gt;</code></td>
+                <td>Represents self-contained content that can be independently distributed.</td>
+                <td>
+                  <article>
+                    <h2>Understanding Semantic HTML</h2>
+                    <p>Semantic HTML enhances accessibility and SEO.</p>
+                  </article>
+                </td>
+                <td>
+                  &lt;article&gt;<br>
+                  &nbsp;&nbsp;&lt;h2&gt;Understanding Semantic HTML&lt;/h2&gt;<br>
+                  &nbsp;&nbsp;&lt;p&gt;Semantic HTML enhances accessibility and SEO.&lt;/p&gt;<br>
+                  &lt;/article&gt;
+                </td>
+              </tr>
+              <tr>
+                <td><code>&lt;section&gt;</code></td>
+                <td>Defines a thematic grouping of content, usually with a heading.</td>
+                <td>
+                  <section>
+                    <h2>About Us</h2>
+                    <p>We are dedicated to providing excellent services.</p>
+                  </section>
+                </td>
+                <td>
+                  &lt;section&gt;<br>
+                  &nbsp;&nbsp;&lt;h2&gt;About Us&lt;/h2&gt;<br>
+                  &nbsp;&nbsp;&lt;p&gt;We are dedicated to providing excellent services.&lt;/p&gt;<br>
+                  &lt;/section&gt;
+                </td>
+              </tr>
+              <tr>
+                <td><code>&lt;aside&gt;</code></td>
+                <td>Represents tangential content, such as sidebars or related information.</td>
+                <td>
+                  <aside>
+                    <p>Did you know? HTML5 simplifies web development.</p>
+                  </aside>
+                </td>
+                <td>
+                  &lt;aside&gt;<br>
+                  &nbsp;&nbsp;&lt;p&gt;Did you know? HTML5 simplifies web development.&lt;/p&gt;<br>
+                  &lt;/aside&gt;
+                </td>
+              </tr>
+              <tr>
+                <td><code>&lt;figure&gt;</code> &amp; <code>&lt;figcaption&gt;</code></td>
+                <td>Groups media content (images, diagrams) with a caption.</td>
+                <td>
+                  <figure>
+                    <img src="https://via.placeholder.com/150" alt="Placeholder image">
+                    <figcaption>Figure 1: A sample image</figcaption>
+                  </figure>
+                </td>
+                <td>
+                  &lt;figure&gt;<br>
+                  &nbsp;&nbsp;&lt;img src="https://via.placeholder.com/150" alt="Placeholder image"&gt;<br>
+                  &nbsp;&nbsp;&lt;figcaption&gt;Figure 1: A sample image&lt;/figcaption&gt;<br>
+                  &lt;/figure&gt;
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
+    </section>
+  </main>
+
+   <!-- Placeholder for Footer -->
+   <div id="footer-container"></div>
+
+  <script src="../js/scripts.js"></script>
+</body>
+</html>

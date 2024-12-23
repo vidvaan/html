@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Images and Multimedia in HTML</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <div id="header-container"></div>
+
+  <main>
+    <section>
+      <h2>HTML Images and Multimedia</h2>
+      <p>HTML allows embedding multimedia content like images, videos, audio, and external resources to create rich web experiences.</p>
+
+      <h3>1. Embedding Images with <code>&lt;img&gt;</code></h3>
+      <p>The <code>&lt;img&gt;</code> tag is used to embed images in an HTML page. It requires the <code>src</code> attribute (source of the image) and optionally includes the <code>alt</code> attribute (alternative text for accessibility).</p>
+      <h4>Syntax:</h4>
+      <pre><code>&lt;img src="image-url" alt="description" /&gt;</code></pre>
+      <h4>Example:</h4>
+      <pre><code>&lt;img src="https://via.placeholder.com/150" alt="Placeholder Image" style="border: 1px solid #ccc; padding: 5px;" /&gt;</code></pre>
+      <p>Rendered Output:</p>
+      <img src="https://via.placeholder.com/150" alt="Placeholder Image" style="border: 1px solid #ccc; padding: 5px;">
+
+      <h3>2. Adding Videos with <code>&lt;video&gt;</code></h3>
+      <p>The <code>&lt;video&gt;</code> tag embeds video content. It supports attributes like <code>controls</code>, <code>autoplay</code>, and <code>loop</code>.</p>
+      <h4>Syntax:</h4>
+      <pre><code>&lt;video src="video-url" controls autoplay loop&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+      <h4>Example:</h4>
+      <pre><code>&lt;video src="https://www.w3schools.com/html/mov_bbb.mp4" controls autoplay loop width="320" height="240"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+      <p>Rendered Output:</p>
+      <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls autoplay loop width="320" height="240">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>3. Adding Audio with <code>&lt;audio&gt;</code></h3>
+      <p>The <code>&lt;audio&gt;</code> tag embeds audio content. It supports similar attributes as the <code>&lt;video&gt;</code> tag, including <code>controls</code> and <code>autoplay</code>.</p>
+      <h4>Syntax:</h4>
+      <pre><code>&lt;audio src="audio-url" controls autoplay&gt;
+  Your browser does not support the audio tag.
+&lt;/audio&gt;</code></pre>
+      <h4>Example:</h4>
+      <pre><code>&lt;audio src="https://www.w3schools.com/html/horse.mp3" controls autoplay&gt;
+  Your browser does not support the audio tag.
+&lt;/audio&gt;</code></pre>
+      <p>Rendered Output:</p>
+      <audio src="https://www.w3schools.com/html/horse.mp3" controls autoplay>
+        Your browser does not support the audio tag.
+      </audio>
+
+      <h3>4. Embedding External Content with <code>&lt;iframe&gt;</code></h3>
+      <p>The <code>&lt;iframe&gt;</code> tag allows embedding external web pages or content into the current page.</p>
+      <h4>Syntax:</h4>
+      <pre><code>&lt;iframe src="https://www.example.com" width="600" height="400"&gt;
+  Your browser does not support iframes.
+&lt;/iframe&gt;</code></pre>
+      <h4>Example:</h4>
+      <pre><code>&lt;iframe src="https://www.wikipedia.org" width="600" height="300" style="border: 1px solid #ccc;"&gt;
+  Your browser does not support iframes.
+&lt;/iframe&gt;</code></pre>
+      <p>Rendered Output:</p>
+      <iframe src="https://www.wikipedia.org" width="600" height="300" style="border: 1px solid #ccc;">
+        Your browser does not support iframes.
+      </iframe>
+
+      <h3>5. Embedding YouTube Video with <code>&lt;iframe&gt;</code></h3>
+<p>The <code>&lt;iframe&gt;</code> tag can also be used to embed a YouTube video.</p>
+<h4>Syntax:</h4>
+<pre><code>&lt;iframe src="https://www.youtube.com/embed/video-id" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+<h4>Example:</h4>
+<pre><code>&lt;iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+<p>Rendered Output:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F_7ZoAQ3aJM?si=WUspcSQFyTXLCwht" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <h3>6. Summary Table</h3>
+      <p>Here’s a summary of the key multimedia concepts in HTML:</p>
+      <table border="1" cellpadding="5">
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Attributes</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>&lt;img&gt;</code></td>
+            <td><code>src</code>, <code>alt</code></td>
+            <td>Embeds images. <code>alt</code> provides alternative text.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;video&gt;</code></td>
+            <td><code>src</code>, <code>controls</code>, <code>autoplay</code>, <code>loop</code></td>
+            <td>Embeds videos with playback controls and customization.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;audio&gt;</code></td>
+            <td><code>src</code>, <code>controls</code>, <code>autoplay</code></td>
+            <td>Embeds audio files with playback controls.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;iframe&gt;</code></td>
+            <td><code>src</code>, <code>width</code>, <code>height</code></td>
+            <td>Embeds external web pages or content.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <script src="../js/scripts.js"></script>
+</body>
+</html>

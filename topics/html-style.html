@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Styles and Colors</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Placeholder for Header -->
+  <div id="header-container"></div>
+
+  <main>
+    <section>
+      <h2>HTML Styles and Colors</h2>
+      <p>HTML provides various styling and coloring options to enhance the visual appearance of the content.</p>
+
+      <h3>1. HTML Styles</h3>
+      <p>CSS is used to style HTML elements. You can apply styles using various methods such as inline styles, internal styles, and external stylesheets.</p>
+
+      <h4>Inline Style:</h4>
+      <pre><code>&lt;div style="color: blue; font-size: 20px;"&gt;This is a styled div.&lt;/div&gt;</code></pre>
+      <h4>Example:</h4>
+      <div style="color: blue; font-size: 20px;">This is a styled div with inline styles.</div>
+
+      <h4>Internal Style:</h4>
+      <pre><code>&lt;style&gt;
+  p {
+    color: green;
+    font-size: 18px;
+  }
+&lt;/style&gt;</code></pre>
+      <h4>Example:</h4>
+      <p  style="color: green; font-size: 18px;">This paragraph is styled using internal CSS.</p>
+
+      <h4>External Style:</h4>
+      <p>External styles are defined in a separate CSS file and linked to the HTML document.</p>
+      <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+       
+      <p>styles.css</p>
+      <pre><code>p {
+ color: red;
+ font-size: 30px;
+}</code></pre>
+
+      <h4>Example:</h4>
+      <p  style="color: red; font-size: 30px;">This paragraph is styled using internal CSS.</p>
+
+      <h3>2. HTML Colors</h3>
+      <p>HTML supports a wide range of colors that can be applied to text, backgrounds, borders, and other elements.</p>
+
+      <h4>Color Names:</h4>
+      <pre><code>&lt;p style="color: red;"&gt;This is red text.&lt;/p&gt;</code></pre>
+      <h4>Example:</h4>
+      <p style="color: red;">This is red text.</p>
+
+      <h4>Hexadecimal Colors:</h4>
+      <pre><code>&lt;p style="color: #00FF00;"&gt;This is green text using hexadecimal color.&lt;/p&gt;</code></pre>
+      <h4>Example:</h4>
+      <p style="color: #00FF00;">This is green text using hexadecimal color.</p>
+
+      <h4>RGB Colors:</h4>
+      <pre><code>&lt;p style="color: rgb(255, 0, 0);"&gt;This is red text using RGB color.&lt;/p&gt;</code></pre>
+      <h4>Example:</h4>
+      <p style="color: rgb(255, 0, 0);">This is red text using RGB color.</p>
+
+      <h4>RGBA Colors (with Transparency):</h4>
+      <pre><code>&lt;p style="color: rgba(255, 0, 0, 0.5);"&gt;This is semi-transparent red text.&lt;/p&gt;</code></pre>
+      <h4>Example:</h4>
+      <p style="color: rgba(255, 0, 0, 0.5);">This is semi-transparent red text.</p>
+
+      <h3>3. Summary Table</h3>
+      <p>Here is a summary of styling and color options:</p>
+      <table border="1" cellpadding="5">
+        <thead>
+          <tr>
+            <th>Concept</th>
+            <th>Method</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Inline Style</td>
+            <td><code>style</code> attribute</td>
+            <td>Styles applied directly to HTML elements.</td>
+          </tr>
+          <tr>
+            <td>Internal Style</td>
+            <td><code>&lt;style&gt;</code> tag</td>
+            <td>Styles defined within the HTML document.</td>
+          </tr>
+          <tr>
+            <td>External Style</td>
+            <td><code>&lt;link&gt;</code> tag</td>
+            <td>Styles defined in an external CSS file.</td>
+          </tr>
+          <tr>
+            <td>Color Names</td>
+            <td>Color keywords (e.g., <code>red</code>)</td>
+            <td>Predefined color names in CSS.</td>
+          </tr>
+          <tr>
+            <td>Hexadecimal Colors</td>
+            <td><code>#RRGGBB</code></td>
+            <td>Colors specified using hex codes.</td>
+          </tr>
+          <tr>
+            <td>RGB Colors</td>
+            <td><code>rgb(r, g, b)</code></td>
+            <td>Colors defined using red, green, blue values.</td>
+          </tr>
+          <tr>
+            <td>RGBA Colors</td>
+            <td><code>rgba(r, g, b, a)</code></td>
+            <td>RGB colors with transparency (alpha channel).</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Placeholder for Footer -->
+  <div id="footer-container"></div>
+
+  <script src="../js/scripts.js"></script>
+</body>
+</html>

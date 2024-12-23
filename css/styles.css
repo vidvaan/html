@@ -313,4 +313,8 @@ table code {
       padding: 12px 20px;
     }
   }
+
+  ol{
+    margin-left: 30px;
+  }
   

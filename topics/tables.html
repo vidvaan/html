@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Table Tags</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Placeholder for Header -->
+  <div id="header-container"></div>
+
+  <main>
+    <section>
+      <h2>HTML Table Tags</h2>
+      <p>HTML tables are used to represent tabular data in rows and columns. Tables allow you to organize data in a structured format, making it easier to read and understand.</p>
+
+      <h3>1. Basic Table Structure</h3>
+      <p>The basic structure of an HTML table involves the following tags:</p>
+      <ul>
+        <li><code>&lt;table&gt;</code>: Defines the table.</li>
+        <li><code>&lt;tr&gt;</code>: Defines a table row.</li>
+        <li><code>&lt;th&gt;</code>: Defines a header cell.</li>
+        <li><code>&lt;td&gt;</code>: Defines a data cell.</li>
+        <li><code>&lt;thead&gt;</code>: Groups the header content in the table.</li>
+        <li><code>&lt;tbody&gt;</code>: Groups the body content in the table.</li>
+      </ul>
+
+      <h4>Syntax:</h4>
+      <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Header 1&lt;/th&gt;
+      &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data 1&lt;/td&gt;
+      &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+      <h4>Example:</h4>
+      <p>Rendered Output:</p>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>2. Table with Multiple Rows and Columns</h3>
+      <p>Tables can have multiple rows and columns to display more data.</p>
+
+      <h4>Syntax:</h4>
+      <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Age&lt;/th&gt;
+      &lt;th&gt;City&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;John&lt;/td&gt;
+      &lt;td&gt;30&lt;/td&gt;
+      &lt;td&gt;New York&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alice&lt;/td&gt;
+      &lt;td&gt;25&lt;/td&gt;
+      &lt;td&gt;London&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+      <h4>Example:</h4>
+      <p>Rendered Output:</p>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>30</td>
+            <td>New York</td>
+          </tr>
+          <tr>
+            <td>Alice</td>
+            <td>25</td>
+            <td>London</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>3. Table with Column Span (<code>&lt;colspan&gt;</code>)</h3>
+      <p>You can merge cells in a row by using the <code>&lt;colspan&gt;</code> attribute.</p>
+
+      <h4>Syntax:</h4>
+      <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th colspan="2"&gt;Merged Header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data 1&lt;/td&gt;
+      &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+      <h4>Example:</h4>
+      <p>Rendered Output:</p>
+      <table border="1">
+        <thead>
+          <tr>
+            <th colspan="2">Merged Header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>4. Table with Row Span (<code>&lt;rowspan&gt;</code>)</h3>
+      <p>You can merge cells in a column by using the <code>&lt;rowspan&gt;</code> attribute.</p>
+
+      <h4>Syntax:</h4>
+      <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th rowspan="2"&gt;Header 1&lt;/th&gt;
+      &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+      <h4>Example:</h4>
+      <p>Rendered Output:</p>
+      <table border="1">
+        <thead>
+          <tr>
+            <th rowspan="2">Header 1</th>
+            <th>Header 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data 1</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>5. Table with Caption (<code>&lt;caption&gt;</code>)</h3>
+      <p>A <code>&lt;caption&gt;</code> tag can be used to add a title to the table.</p>
+
+      <h4>Syntax:</h4>
+      <pre><code>&lt;table&gt;
+  &lt;caption&gt;Table Title&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Column 1&lt;/th&gt;
+      &lt;th&gt;Column 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data 1&lt;/td&gt;
+      &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+      <h4>Example:</h4>
+      <p>Rendered Output:</p>
+      <table border="1">
+        <caption>Table Title</caption>
+        <thead>
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>6. Summary Table</h3>
+      <p>Here is a summary of the table tags:</p>
+      <table border="1" cellpadding="5">
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>&lt;table&gt;</code></td>
+            <td>Defines the entire table structure.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;thead&gt;</code></td>
+            <td>Groups the header content in the table.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;tbody&gt;</code></td>
+            <td>Groups the body content in the table.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;tr&gt;</code></td>
+            <td>Defines a row inside the table.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;th&gt;</code></td>
+            <td>Defines a header cell in the table.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;td&gt;</code></td>
+            <td>Defines a data cell in the table.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;caption&gt;</code></td>
+            <td>Adds a title or caption to the table.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;colspan&gt;</code></td>
+            <td>Spans multiple columns in a header or data cell.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;rowspan&gt;</code></td>
+            <td>Spans multiple rows in a header or data cell.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Product Inventory</h2>
+      <p>This table represents the current product inventory, showing the product name, category, price, quantity, and total value.</p>
+
+      <h4>Syntax:</h4>
+      <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Product Name&lt;/th&gt;
+      &lt;th&gt;Category&lt;/th&gt;
+      &lt;th&gt;Price&lt;/th&gt;
+      &lt;th&gt;Quantity&lt;/th&gt;
+      &lt;th&gt;Total Value&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Laptop&lt;/td&gt;
+      &lt;td&gt;Electronics&lt;/td&gt;
+      &lt;td&gt;$800&lt;/td&gt;
+      &lt;td&gt;15&lt;/td&gt;
+      &lt;td&gt;$12000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+      <h4>Example:</h4>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Laptop</td>
+            <td>Electronics</td>
+            <td>$800</td>
+            <td>15</td>
+            <td>$12000</td>
+          </tr>
+          <tr>
+            <td>Smartphone</td>
+            <td>Electronics</td>
+            <td>$500</td>
+            <td>30</td>
+            <td>$15000</td>
+          </tr>
+          <tr>
+            <td>Headphones</td>
+            <td>Accessories</td>
+            <td>$100</td>
+            <td>50</td>
+            <td>$5000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Order Management</h2>
+      <p>This table displays the list of orders with the order number, customer name, order date, and status.</p>
+
+      <h4>Syntax:</h4>
+      <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Order Number&lt;/th&gt;
+      &lt;th&gt;Customer Name&lt;/th&gt;
+      &lt;th&gt;Order Date&lt;/th&gt;
+      &lt;th&gt;Status&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ORD001&lt;/td&gt;
+      &lt;td&gt;John Doe&lt;/td&gt;
+      &lt;td&gt;2024-12-01&lt;/td&gt;
+      &lt;td&gt;Shipped&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+      <h4>Example:</h4>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Order Number</th>
+            <th>Customer Name</th>
+            <th>Order Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ORD001</td>
+            <td>John Doe</td>
+            <td>2024-12-01</td>
+            <td>Shipped</td>
+          </tr>
+          <tr>
+            <td>ORD002</td>
+            <td>Alice Smith</td>
+            <td>2024-12-02</td>
+            <td>Processing</td>
+          </tr>
+          <tr>
+            <td>ORD003</td>
+            <td>Bob Johnson</td>
+            <td>2024-12-03</td>
+            <td>Pending</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Employee Details</h2>
+      <p>This table displays the details of employees, including their name, age, and salary.</p>
+
+      <h4>Syntax:</h4>
+      <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Employee Name&lt;/th&gt;
+      &lt;th&gt;Age&lt;/th&gt;
+      &lt;th&gt;Salary&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;John Doe&lt;/td&gt;
+      &lt;td&gt;30&lt;/td&gt;
+      &lt;td&gt;$5000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+      <h4>Example:</h4>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Employee Name</th>
+            <th>Age</th>
+            <th>Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>30</td>
+            <td>$5000</td>
+          </tr>
+          <tr>
+            <td>Alice Smith</td>
+            <td>28</td>
+            <td>$4500</td>
+          </tr>
+          <tr>
+            <td>Bob Johnson</td>
+            <td>35</td>
+            <td>$6000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Placeholder for Footer -->
+  <div id="footer-container"></div>
+
+  <script src="../js/scripts.js"></script>
+</body>
+</html>

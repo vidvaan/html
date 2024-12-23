@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links and Navigation in HTML</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <div id="header-container"></div>
+
+  <main>
+    <section>
+      <h2>HTML Links and Navigation</h2>
+      <p>Links and navigation are essential for creating an interconnected web experience. HTML provides several ways to create links and build navigation menus.</p>
+
+      <h3>1. Anchor Tags (<code>&lt;a&gt;</code> and <code>href</code> Attribute)</h3>
+      <p>The <code>&lt;a&gt;</code> tag is used to create hyperlinks. The <code>href</code> attribute specifies the URL the link points to.</p>
+      <h4>Syntax:</h4>
+      <pre><code>&lt;a href="URL"&gt;Link Text&lt;/a&gt;</code></pre>
+      <h4>Example:</h4>
+      <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example Website&lt;/a&gt;</code></pre>
+      <p>Rendered Output:</p>
+      <a href="https://www.example.com">Visit Example Website</a>
+
+      <h3>2. Opening Links in New Tabs (<code>target="_blank"</code>)</h3>
+      <p>To open a link in a new tab, use the <code>target</code> attribute with the value <code>_blank</code>.</p>
+      <h4>Syntax:</h4>
+      <pre><code>&lt;a href="URL" target="_blank"&gt;Link Text&lt;/a&gt;</code></pre>
+      <h4>Example:</h4>
+      <pre><code>&lt;a href="https://www.openai.com" target="_blank"&gt;Open AI Website in New Tab&lt;/a&gt;</code></pre>
+      <p>Rendered Output:</p>
+      <a href="https://www.openai.com" target="_blank">Open AI Website in New Tab</a>
+
+      <h3>3. Internal Linking Using <code>id</code> and Anchors</h3>
+      <p>Internal links allow navigation within the same page using anchors and IDs. The <code>href</code> attribute should point to the ID of a specific element on the page.</p>
+      <h4>Syntax:</h4>
+      <pre><code>&lt;a href="#section-id"&gt;Link Text&lt;/a&gt;
+...
+&lt;div id="section-id"&gt;Target Section&lt;/div&gt;</code></pre>
+      <h4>Example:</h4>
+      <pre><code>&lt;a href="#example-section"&gt;Go to Example Section&lt;/a&gt;
+&lt;div id="example-section" style="margin-top: 50px; padding: 10px; border: 1px solid #ccc;"&gt;
+&lt;strong&gt;Example Section:&lt;/strong&gt; You have navigated to this section via an internal link.
+&lt;/div&gt;</code></pre>
+      <p>Rendered Output:</p>
+      <a href="#example-section">Go to Example Section</a>
+      <div id="example-section" style="margin-top: 50px; padding: 10px; border: 1px solid #ccc;">
+        <strong>Example Section:</strong> You have navigated to this section via an internal link.
+      </div>
+
+      <h3>4. Navigation Menus (<code>&lt;nav&gt;</code>)</h3>
+      <p>The <code>&lt;nav&gt;</code> tag is used to define navigation links for a website.</p>
+      <h4>Syntax:</h4>
+      <pre><code>&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="home.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+      <h4>Example:</h4>
+      <p>Rendered Output:</p>
+      <nav style="background-color: #f4f4f4; padding: 10px; border: 1px solid #ccc;">
+        <ul style="list-style: none; padding: 0; display: flex; gap: 15px;">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <h3>5. Summary Table</h3>
+      <p>Here’s a summary of the key concepts related to links and navigation in HTML:</p>
+      <table border="1" cellpadding="5">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Tag/Attribute</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic Link</td>
+            <td><code>&lt;a href="URL"&gt;</code></td>
+            <td>Creates a hyperlink to the specified URL.</td>
+          </tr>
+          <tr>
+            <td>Open in New Tab</td>
+            <td><code>target="_blank"</code></td>
+            <td>Opens the link in a new browser tab.</td>
+          </tr>
+          <tr>
+            <td>Internal Link</td>
+            <td><code>&lt;a href="#id"&gt;</code></td>
+            <td>Links to a specific section within the same page.</td>
+          </tr>
+          <tr>
+            <td>Navigation Menu</td>
+            <td><code>&lt;nav&gt;</code></td>
+            <td>Defines a group of navigation links.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <script src="../js/scripts.js"></script>
+</body>
+</html>
